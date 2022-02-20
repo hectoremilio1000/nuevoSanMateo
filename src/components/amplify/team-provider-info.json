@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-sanmateoreact-dev-95239-authRole",
+      "UnauthRoleArn": "arn:aws:iam::900765165512:role/amplify-sanmateoreact-dev-95239-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::900765165512:role/amplify-sanmateoreact-dev-95239-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-sanmateoreact-dev-95239-deployment",
+      "UnauthRoleName": "amplify-sanmateoreact-dev-95239-unauthRole",
+      "StackName": "amplify-sanmateoreact-dev-95239",
+      "StackId": "arn:aws:cloudformation:us-east-1:900765165512:stack/amplify-sanmateoreact-dev-95239/5a58cba0-6d76-11ec-afff-121d78e7ed09",
+      "AmplifyAppId": "d1fq01pa2qt3hz"
+    },
+    "categories": {
+      "auth": {
+        "sanmateoreacta81379a1": {}
+      }
+    }
+  }
+}
