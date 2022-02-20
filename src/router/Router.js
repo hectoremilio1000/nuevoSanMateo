@@ -3,6 +3,7 @@ import { HashRouter, Switch, Route } from "react-router-dom";
 
 import Home from "../pages/Home";
 import Nav from "../components/Nav";
+import Administrador from "../pages/administrador";
 
 const Router = () => {
   const [current, setCurrent] = useState("home");
@@ -22,7 +23,7 @@ const Router = () => {
 
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/protected" />
+        <Route exact path="/administrador" component={Administrador} />
         <Route exact path="/profile" />
         <Route component={Home} />
       </Switch>

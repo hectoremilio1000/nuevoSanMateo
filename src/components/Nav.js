@@ -11,28 +11,32 @@ import MenuItem from "antd/lib/menu/MenuItem";
 const Nav = props => {
   const { current } = props;
   return (
-    <div>
-      <Menu selectedKeys={[current]} mode="horizontal">
-        <Menu.Item key="home">
-          <Link to={`/`}>
-            <HomeOutlined />
-            Home
-          </Link>
-        </Menu.Item>
-        {/* <Menu.Item key="profile">
-          <Link to="/profile">
-            <ProfileOutlined />
-            Profile
-          </Link>
-        </Menu.Item> */}
-        {/* <MenuItem.Item key={"protected"}>
-          <Link to="/protected">
-            <FileProtectOutlined />
-            Protected
-          </Link>
-        </MenuItem.Item> */}
-      </Menu>
-    </div>
+    <Menu
+      style={{
+        display: "flex",
+        justifyContent: "space-around",
+        alignItems: "flex-end",
+      }}
+      selectedKeys={[current]}
+      mode="horizontal"
+    >
+      <Menu.Item key="home">
+        <Link to={`/`}>
+          <img
+            src="https://imagenesrutalab.s3.amazonaws.com/sanmateo/logo+nuevo/SAN-MATEO.png"
+            alt="laboratorio san mateo"
+            width="200"
+            className="nombre_logo"
+          />
+        </Link>
+      </Menu.Item>
+
+      <Menu.Item key="administrador">
+        <Link to="/administrador">
+          <p style={{ fontWeight: 800 }}>Iniciar Sesión</p>
+        </Link>
+      </Menu.Item>
+    </Menu>
   );
 };
 export default Nav;
